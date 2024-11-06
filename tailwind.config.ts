@@ -8,10 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        "lato-sans": ["var(--font-lato-sans)"]
       },
+      colors: {
+        "custom-white": {
+          100: '#F1F2F3'
+        },
+        'disney-blue': '#054553',
+        "custom-gray": {
+          100: '#C2CCDA',
+          300: '#5B6873'
+        },
+        'error': '#FF0004'
+      },
+      boxShadow: {
+        'button': '0 4px 4px 0 #054553',
+        'image': '0 4px 24px 0 #054553',
+      }
     },
   },
   plugins: [],
